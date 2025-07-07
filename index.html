@@ -9,15 +9,14 @@
   <script src="https://unpkg.com/react-dom @18/umd/react-dom.development.js" crossorigin></script>
   <script src="https://unpkg.com/ @babel/standalone/babel.min.js"></script>
 
-  <!-- Fonts -->
+  <!-- Fonts & Tailwind -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-
-  <!-- TailwindCSS CDN -->
   <script src=" https://cdn.tailwindcss.com "></script>
 </head>
 <body class="font-sans text-gray-800 antialiased">
   <div id="root"></div>
 
+  <!-- React App Code -->
   <script type="text/babel">
     const App = () => {
       return (
@@ -55,7 +54,7 @@
               <a href="#industries" className="block py-2 hover:text-indigo-600">Industries</a>
               <a href="#pricing" className="block py-2 hover:text-indigo-600">Pricing</a>
               <a href="#faq" className="block py-2 hover:text-indigo-600">FAQ</a>
-              <button className="w-full mt-2 bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded-full transition">
+              <button className="w-full mt-2 bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-full transition">
                 Get Started
               </button>
             </div>
@@ -99,192 +98,59 @@
                     Secure storage, inventory management, and last-mile delivery services at strategic hubs across North America, Europe, and Asia.
                   </p>
                 </div>
-                <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                  <h3 className="text-xl font-semibold mb-3">Trade Compliance</h3>
-                  <p className="text-gray-600">
-                    Stay ahead of regulatory changes with our up-to-date compliance audits, export licensing, and risk mitigation strategies.
-                  </p>
-                </div>
-                <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                  <h3 className="text-xl font-semibold mb-3">Supply Chain Consulting</h3>
-                  <p className="text-gray-600">
-                    Optimize your global operations with customized consulting on sourcing, vendor management, and logistics automation.
-                  </p>
-                </div>
-                <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                  <h3 className="text-xl font-semibold mb-3">E-Commerce Fulfillment</h3>
-                  <p className="text-gray-600">
-                    Scalable fulfillment solutions for online retailers, including cross-border order processing, returns management, and API integrations.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Why Choose Us */}
-          <section className="bg-white py-20">
-            <div className="container mx-auto px-6">
-              <div className="flex flex-col lg:flex-row items-center gap-12">
-                <div className="lg:w-1/2">
-                  <img src="https://picsum.photos/id/237/800/600 " alt="Golden Gate Trade Office" className="rounded-lg shadow-md w-full" />
-                </div>
-                <div className="lg:w-1/2">
-                  <h2 className="text-3xl font-bold mb-4">Why Choose Golden Gate Trade?</h2>
-                  <p className="text-gray-600 mb-4">
-                    At Golden Gate Trade, we believe that global commerce should be accessible, efficient, and transparent. While we may be a young company, our team brings decades of combined experience in international trade, supply chain logistics, and customs compliance.
-                  </p>
-                  <p className="text-gray-600 mb-4">
-                    Our vision is simple: to become a trusted partner for businesses looking to enter new markets, scale their operations, and streamline their import/export processes.
-                  </p>
-                  <p className="text-gray-600">
-                    With cutting-edge technology, personalized support, and a forward-thinking approach, we're building the foundation for long-term success — one shipment at a time.
-                  </p>
-                </div>
               </div>
             </div>
           </section>
 
           {/* About Section */}
-          <section id="about" className="py-20 bg-gray-50">
+          <section id="about" className="py-20 bg-white">
             <div className="container mx-auto px-6">
-              <h2 className="text-3xl font-bold text-center mb-12">About Golden Gate Trade</h2>
-              <p className="max-w-3xl mx-auto text-gray-600 text-lg mb-6">
-                Founded in 2019, Golden Gate Trade was born out of a need for smarter, more adaptable logistics solutions in an increasingly globalized economy.
-              </p>
-              <p className="max-w-3xl mx-auto text-gray-600 text-lg mb-12">
-                Our founders recognized that traditional import/export models were outdated, inefficient, and often inaccessible to smaller businesses. So we set out to create a platform that would make international trade easier, faster, and more cost-effective — regardless of your size or location.
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div className="bg-white p-6 rounded-lg shadow-md">
-                  <h3 className="text-xl font-semibold mb-3">Our Mission</h3>
-                  <p className="text-gray-600">
-                    To empower businesses with seamless logistics, innovative tools, and expert guidance for successful global expansion.
+              <div className="flex flex-col lg:flex-row items-center gap-12">
+                <div className="lg:w-1/2">
+                  <img src="https://picsum.photos/id/237/800/600 " alt="Office" className="rounded-lg shadow-md w-full" />
+                </div>
+                <div className="lg:w-1/2">
+                  <h2 className="text-3xl font-bold mb-4">Why Choose Golden Gate Trade?</h2>
+                  <p className="text-gray-600 mb-4">
+                    We believe global commerce should be accessible and efficient. Our team brings decades of experience in international trade.
                   </p>
-                </div>
-                <div className="bg-white p-6 rounded-lg shadow-md">
-                  <h3 className="text-xl font-semibold mb-3">Our Values</h3>
                   <p className="text-gray-600">
-                    Integrity, transparency, and customer-first thinking are at the core of everything we do.
+                    With cutting-edge tech, we're building the foundation for long-term success — one shipment at a time.
                   </p>
-                </div>
-                <div className="bg-white p-6 rounded-lg shadow-md">
-                  <h3 className="text-xl font-semibold mb-3">Our Future</h3>
-                  <p className="text-gray-600">
-                    As we grow, we remain committed to innovation, agility, and building strong relationships with every client we serve.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Vision Section */}
-          <section id="vision" className="bg-white py-20">
-            <div className="container mx-auto px-6">
-              <h2 className="text-3xl font-bold text-center mb-12">Our Vision for the Future</h2>
-              <p className="max-w-3xl mx-auto text-gray-600 text-lg mb-8">
-                While we're proud of how far we've come since 2019, we know the best is yet to come. Our roadmap includes:
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-                  <h3 className="text-xl font-semibold mb-3">Global Expansion</h3>
-                  <p className="text-gray-600">
-                    Opening regional offices in key trade hubs across Europe and Asia by 2025.
-                  </p>
-                </div>
-                <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-                  <h3 className="text-xl font-semibold mb-3">Technology Integration</h3>
-                  <p className="text-gray-600">
-                    Launching AI-powered customs analytics and shipment tracking platforms to enhance visibility and control.
-                  </p>
-                </div>
-                <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-                  <h3 className="text-xl font-semibold mb-3">Sustainability Initiatives</h3>
-                  <p className="text-gray-600">
-                    Implementing green logistics practices, including carbon-neutral shipping options.
-                  </p>
-                </div>
-                <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-                  <h3 className="text-xl font-semibold mb-3">Strategic Partnerships</h3>
-                  <p className="text-gray-600">
-                    Building alliances with customs brokers, freight carriers, and warehouse providers worldwide.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Industries Served */}
-          <section id="industries" className="py-20 bg-gray-50">
-            <div className="container mx-auto px-6">
-              <h2 className="text-3xl font-bold text-center mb-12">Industries We Serve</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div className="bg-white rounded-lg shadow-md overflow-hidden group">
-                  <img src="https://picsum.photos/id/716/400/300 " alt="Electronics" className="w-full h-40 object-cover group-hover:scale-105 transition duration-300" />
-                  <div className="p-4">
-                    <h3 className="text-xl font-semibold">Electronics</h3>
-                    <p className="text-gray-600 mt-2">Smartphones, semiconductors, consumer tech, and industrial components.</p>
-                  </div>
-                </div>
-                <div className="bg-white rounded-lg shadow-md overflow-hidden group">
-                  <img src="https://picsum.photos/id/715/400/300 " alt="Apparel" className="w-full h-40 object-cover group-hover:scale-105 transition duration-300" />
-                  <div className="p-4">
-                    <h3 className="text-xl font-semibold">Apparel & Accessories</h3>
-                    <p className="text-gray-600 mt-2">Fashion wear, footwear, textiles, and branded merchandise.</p>
-                  </div>
-                </div>
-                <div className="bg-white rounded-lg shadow-md overflow-hidden group">
-                  <img src="https://picsum.photos/id/714/400/300 " alt="Industrial Machinery" className="w-full h-40 object-cover group-hover:scale-105 transition duration-300" />
-                  <div className="p-4">
-                    <h3 className="text-xl font-semibold">Industrial Machinery</h3>
-                    <p className="text-gray-600 mt-2">Heavy equipment, automation tools, and factory production systems.</p>
-                  </div>
-                </div>
-                <div className="bg-white rounded-lg shadow-md overflow-hidden group">
-                  <img src="https://picsum.photos/id/713/400/300 " alt="Foodstuffs" className="w-full h-40 object-cover group-hover:scale-105 transition duration-300" />
-                  <div className="p-4">
-                    <h3 className="text-xl font-semibold">Food & Beverages</h3>
-                    <p className="text-gray-600 mt-2">Packaged foods, beverages, agricultural products, and gourmet goods.</p>
-                  </div>
                 </div>
               </div>
             </div>
           </section>
 
           {/* Pricing */}
-          <section id="pricing" className="py-20 bg-white">
+          <section id="pricing" className="py-20 bg-gray-50">
             <div className="container mx-auto px-6">
               <h2 className="text-3xl font-bold text-center mb-12">Service Tiers</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="bg-white border border-gray-200 rounded-lg shadow-md p-6">
                   <h3 className="text-xl font-semibold mb-2">Basic</h3>
-                  <p className="text-gray-600 mb-4">Perfect for startups and small businesses entering international markets.</p>
+                  <p className="text-gray-600 mb-4">Perfect for small businesses entering global markets.</p>
                   <div className="text-3xl font-bold mb-6">$499/mo</div>
                   <ul className="space-y-2 text-gray-600 mb-6">
                     <li>✓ Up to 5 shipments/month</li>
                     <li>✓ Standard customs clearance</li>
-                    <li>✓ Email support</li>
                     <li>✗ No dedicated account manager</li>
-                    <li>✗ No priority shipping lanes</li>
                   </ul>
                   <button className="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded-full transition">
                     Choose Plan
                   </button>
                 </div>
                 <div className="bg-white border-2 border-indigo-600 rounded-lg shadow-lg p-6 relative">
-                  <span className="absolute top-0 right-0 bg-indigo-600 text-white text-xs uppercase px-3 py-1 rounded-bl-lg">
-                    Popular
-                  </span>
+                  <span className="absolute top-0 right-0 bg-indigo-600 text-white text-xs uppercase px-3 py-1 rounded-bl-lg">Popular</span>
                   <h3 className="text-xl font-semibold mb-2">Enterprise</h3>
                   <p className="text-gray-600 mb-4">Ideal for growing businesses with regular international trade needs.</p>
                   <div className="text-3xl font-bold mb-6">$1,499/mo</div>
                   <ul className="space-y-2 text-gray-600 mb-6">
                     <li>✓ Up to 30 shipments/month</li>
-                    <li>✓ Expedited customs processing</li>
                     <li>✓ Dedicated account manager</li>
-                    <li>✓ Priority shipping lanes</li>
                     <li>✓ Free compliance audit</li>
                   </ul>
-                  <button className="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded-full transition">
+                  <button className="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded-full transition">
                     Choose Plan
                   </button>
                 </div>
@@ -295,8 +161,6 @@
                   <ul className="space-y-2 text-gray-600 mb-6">
                     <li>✓ Unlimited shipments</li>
                     <li>✓ White-glove customs service</li>
-                    <li>✓ On-demand analytics dashboard</li>
-                    <li>✓ 24/7 premium support</li>
                     <li>✓ Strategic planning sessions</li>
                   </ul>
                   <button className="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded-full transition">
@@ -317,12 +181,12 @@
                     What countries do you operate in?
                     <span className="transition-transform duration-300 group-open:rotate-180">
                       <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7 7z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                       </svg>
                     </span>
                   </summary>
                   <div className="mt-2 text-gray-600">
-                    We provide services across North America, South America, Europe, Asia, Africa, and Australia. Our extensive partner network allows us to deliver to nearly any location worldwide.
+                    We provide services across North America, South America, Europe, Asia, Africa, and Australia.
                   </div>
                 </details>
                 <details className="group bg-white p-4 rounded-lg shadow-sm cursor-pointer">
@@ -335,20 +199,7 @@
                     </span>
                   </summary>
                   <div className="mt-2 text-gray-600">
-                    Customs clearance typically takes between 1–5 business days depending on the country, documentation completeness, and cargo classification. Our expedited service reduces delays wherever possible.
-                  </div>
-                </details>
-                <details className="group bg-white p-4 rounded-lg shadow-sm cursor-pointer">
-                  <summary className="text-lg font-medium flex justify-between items-center">
-                    Can you handle hazardous materials?
-                    <span className="transition-transform duration-300 group-open:rotate-180">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                      </svg>
-                    </span>
-                  </summary>
-                  <div className="mt-2 text-gray-600">
-                    Yes, we are fully licensed to transport and clear hazardous and regulated goods. Our team follows strict protocols to ensure safety and compliance during transit and customs processing.
+                    Customs clearance typically takes between 1–5 business days depending on the country and cargo classification.
                   </div>
                 </details>
               </div>
@@ -368,30 +219,24 @@
                   <ul className="space-y-2 text-gray-600">
                     <li><strong>Email:</strong> milev4ever@gmail.com</li>
                     <li><strong>Phone:</strong> (408) 661-2640</li>
-                    <li><strong>Address:</strong> 123 Maritime Way, San Francisco, CA 94107</li>
+                    <li><strong>Address:</strong> San Francisco, CA 94107</li>
                   </ul>
                 </div>
                 <form className="bg-gray-50 p-6 rounded-lg shadow-md">
                   <h3 className="text-xl font-semibold mb-4">Send Us a Message</h3>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-1">First Name</label>
-                      <input type="text" required className="w-full px-4 py-2 border border-gray-300 rounded focus:ring-indigo-500 focus:border-indigo-500" />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-1">Last Name</label>
-                      <input type="text" required className="w-full px-4 py-2 border border-gray-300 rounded focus:ring-indigo-500 focus:border-indigo-500" />
-                    </div>
+                  <div className="mb-4">
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                    <input type="text" required className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" />
                   </div>
                   <div className="mb-4">
                     <label className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
-                    <input type="email" required className="w-full px-4 py-2 border border-gray-300 rounded focus:ring-indigo-500 focus:border-indigo-500" />
+                    <input type="email" required className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" />
                   </div>
                   <div className="mb-4">
                     <label className="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                    <textarea rows="5" required className="w-full px-4 py-2 border border-gray-300 rounded focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                    <textarea rows="5" required className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"></textarea>
                   </div>
-                  <button type="submit" className="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded-full transition">
+                  <button type="submit" className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-full transition">
                     Send Message
                   </button>
                 </form>
@@ -401,209 +246,10 @@
 
           {/* Footer */}
           <footer className="bg-gray-800 text-white py-12">
-            <div className="container mx-auto px-6">
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                  <h3 className="text-xl font-bold mb-4">Golden Gate Trade</h3>
-                  <p className="text-gray-400">
-                    Your global trade partner for seamless import/export solutions.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-                  <ul className="space-y-2 text-gray-400">
-                    <li><a href="#services" className="hover:text-white transition">Services</a></li>
-                    <li><a href="#about" className="hover:text-white transition">About Us</a></li>
-                    <li><a href="#vision" className="hover:text-white transition">Vision</a></li>
-                    <li><a href="#industries" className="hover:text-white transition">Industries</a></li>
-                    <li><a href="#pricing" className="hover:text-white transition">Pricing</a></li>
-                    <li><a href="#faq" className="hover:text-white transition">FAQ</a></li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold mb-4">Legal</h3>
-                  <ul className="space-y-2 text-gray-400">
-                    <li><a href="#" className="hover:text-white transition">Privacy Policy</a></li>
-                    <li><a href="#" className="hover:text-white transition">Terms of Service</a></li>
-                    <li><a href="#" className="hover:text-white transition">Cookie Policy</a></li>
-                    <li><a href="#" className="hover:text-white transition">Data Usage</a></li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold mb-4">Connect With Us</h3>
-                  <ul className="space-y-2 text-gray-400">
-                    <li>Email: <a href="mailto:milev4ever@gmail.com" className="hover:text-white transition">milev4ever@gmail.com</a></li>
-                    <li>Phone: (408) 661-2640</li>
-                    <li>Social Media:
-                      <div className="flex space-x-4 mt-2">
-                        <a href="#" className="text-gray-400 hover:text-white transition">FB</a>
-                        <a href="#" className="text-gray-400 hover:text-white transition">LI</a>
-                        <a href="#" className="text-gray-400 hover:text-white transition">X</a>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="border-t border-gray-700 mt-8 pt-6 text-center text-sm text-gray-400">
-                © {new Date().getFullYear()} Golden Gate Trade. All rights reserved.
-              </div>
+            <div className="container mx-auto px-6 text-center">
+              <p>© {new Date().getFullYear()} Golden Gate Trade – All rights reserved</p>
             </div>
           </footer>
-
-          {/* Advanced Features Section */}
-          <section className="bg-white py-20">
-            <div className="container mx-auto px-6">
-              <h2 className="text-3xl font-bold text-center mb-12">Advanced Logistics Features</h2>
-              <p className="max-w-3xl mx-auto text-gray-600 text-lg mb-10 text-center">
-                We offer a suite of advanced tools and services designed to bring transparency, control, and efficiency to your international trade operations.
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition relative group overflow-hidden">
-                  <div className="absolute top-0 left-0 w-full h-1 bg-indigo-600 transform -translate-y-full group-hover:translate-y-0 transition duration-300"></div>
-                  <h3 className="text-xl font-semibold mb-3">Real-Time Shipment Tracking</h3>
-                  <p className="text-gray-600">
-                    Monitor your cargo from origin to destination with live GPS tracking, customs status updates, and delivery window predictions.
-                  </p>
-                </div>
-                <div className="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition relative group overflow-hidden">
-                  <div className="absolute top-0 left-0 w-full h-1 bg-indigo-600 transform -translate-y-full group-hover:translate-y-0 transition duration-300"></div>
-                  <h3 className="text-xl font-semibold mb-3">Automated Customs Documentation</h3>
-                  <p className="text-gray-600">
-                    Reduce manual entry errors with our AI-powered document generation system. Generate compliant forms in seconds.
-                  </p>
-                </div>
-                <div className="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition relative group overflow-hidden">
-                  <div className="absolute top-0 left-0 w-full h-1 bg-indigo-600 transform -translate-y-full group-hover:translate-y-0 transition duration-300"></div>
-                  <h3 className="text-xl font-semibold mb-3">Trade Compliance Insights</h3>
-                  <p className="text-gray-600">
-                    Stay ahead of regulatory changes with built-in compliance alerts and risk assessment tools tailored to your product categories.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Timeline Since 2019 */}
-          <section className="bg-white py-20">
-            <div className="container mx-auto px-6">
-              <h2 className="text-3xl font-bold text-center mb-12">Our Journey Since 2019</h2>
-              <div className="relative border-l-2 border-indigo-500 pl-6">
-                <div className="mb-10 ml-6">
-                  <span className="absolute -left-3 mt-1 h-6 w-6 rounded-full bg-indigo-500 ring-4 ring-white"></span>
-                  <h3 className="text-xl font-semibold text-gray-900">2019 – Founding</h3>
-                  <time className="block mb-2 text-sm font-normal leading-none text-gray-400">January</time>
-                  <p className="text-gray-600">
-                    Golden Gate Trade was founded with a mission to simplify global logistics for small to mid-sized businesses.
-                  </p>
-                </div>
-                <div className="mb-10 ml-6">
-                  <span className="absolute -left-3 mt-1 h-6 w-6 rounded-full bg-indigo-500 ring-4 ring-white"></span>
-                  <h3 className="text-xl font-semibold text-gray-900">2020 – First Platform Launch</h3>
-                  <time className="block mb-2 text-sm font-normal leading-none text-gray-400">March</time>
-                  <p className="text-gray-600">
-                    Launched our beta platform focused on customs documentation and freight rate calculation tools.
-                  </p>
-                </div>
-                <div className="mb-10 ml-6">
-                  <span className="absolute -left-3 mt-1 h-6 w-6 rounded-full bg-indigo-500 ring-4 ring-white"></span>
-                  <h3 className="text-xl font-semibold text-gray-900">2021 – Expansion Planning</h3>
-                  <time className="block mb-2 text-sm font-normal leading-none text-gray-400">September</time>
-                  <p className="text-gray-600">
-                    Began developing regional partnerships and planning future expansion into European and Asian markets.
-                  </p>
-                </div>
-                <div className="mb-10 ml-6">
-                  <span className="absolute -left-3 mt-1 h-6 w-6 rounded-full bg-indigo-500 ring-4 ring-white"></span>
-                  <h3 className="text-xl font-semibold text-gray-900">2022 – Technology Upgrades</h3>
-                  <time className="block mb-2 text-sm font-normal leading-none text-gray-400">May</time>
-                  <p className="text-gray-600">
-                    Introduced real-time tracking capabilities, enhanced compliance tools, and mobile app integration.
-                  </p>
-                </div>
-                <div className="mb-10 ml-6">
-                  <span className="absolute -left-3 mt-1 h-6 w-6 rounded-full bg-indigo-500 ring-4 ring-white"></span>
-                  <h3 className="text-xl font-semibold text-gray-900">2023 – Service Diversification</h3>
-                  <time className="block mb-2 text-sm font-normal leading-none text-gray-400">August</time>
-                  <p className="text-gray-600">
-                    Expanded service offerings to include warehousing, supply chain consulting, and e-commerce fulfillment.
-                  </p>
-                </div>
-                <div className="mb-10 ml-6">
-                  <span className="absolute -left-3 mt-1 h-6 w-6 rounded-full bg-indigo-500 ring-4 ring-white"></span>
-                  <h3 className="text-xl font-semibold text-gray-900">2024 – Growth Phase</h3>
-                  <time className="block mb-2 text-sm font-normal leading-none text-gray-400">February</time>
-                  <p className="text-gray-600">
-                    Strengthened internal systems, launched customer onboarding enhancements, and refined our service portfolio.
-                  </p>
-                </div>
-                <div className="ml-6">
-                  <span className="absolute -left-3 mt-1 h-6 w-6 rounded-full bg-indigo-500 ring-4 ring-white"></span>
-                  <h3 className="text-xl font-semibold text-gray-900">2025 – Looking Ahead</h3>
-                  <time className="block mb-2 text-sm font-normal leading-none text-gray-400">In Development</time>
-                  <p className="text-gray-600">
-                    Expanding into new regions, launching AI-driven compliance tools, and integrating with major e-commerce platforms.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Demo Request Modal Trigger */}
-          <section className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-20">
-            <div className="container mx-auto px-6 text-center">
-              <h2 className="text-3xl font-bold mb-6">Start Your Global Expansion Today</h2>
-              <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
-                Whether you're exporting for the first time or managing complex global operations, Golden Gate Trade is ready to support your growth.
-              </p>
-              <button id="open-modal-btn" className="bg-white text-indigo-700 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition">
-                Request a Demo
-              </button>
-            </div>
-
-            {/* Modal Overlay */}
-            <div id="demo-modal" className="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
-              <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md mx-4">
-                <button id="close-modal-btn" className="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-                <h3 className="text-2xl font-bold mb-4 text-gray-800">Request a Demo</h3>
-                <form>
-                  <div className="mb-4">
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
-                    <input type="text" required className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500" />
-                  </div>
-                  <div className="mb-4">
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
-                    <input type="email" required className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500" />
-                  </div>
-                  <div className="mb-4">
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Company Name</label>
-                    <input type="text" required className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500" />
-                  </div>
-                  <div className="mb-4">
-                    <label className="block text-sm font-medium text-gray-700 mb-1">What Are You Looking For?</label>
-                    <select className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                      <option>Select an option</option>
-                      <option>Freight Logistics</option>
-                      <option>Warehousing</option>
-                      <option>Customs Clearance</option>
-                      <option>E-Commerce Fulfillment</option>
-                      <option>Supply Chain Consulting</option>
-                    </select>
-                  </div>
-                  <div className="mb-4">
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                    <textarea rows="5" required className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
-                  </div>
-                  <button type="submit" className="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded-full transition">
-                    Submit Request
-                  </button>
-                </form>
-              </div>
-            </div>
-          </section>
         </div>
       );
     };
@@ -611,30 +257,15 @@
     const root = ReactDOM.createRoot(document.getElementById('root'));
     root.render(<App />);
   </script>
+</body>
 
-  <!-- Mobile Menu Script -->
-  <script>
+<!-- Separate Script Tag for Event Listeners -->
+<script>
+  // Wait until the DOM is fully loaded before accessing elements
+  window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('menu-btn').addEventListener('click', () => {
       document.getElementById('mobile-menu').classList.toggle('hidden');
     });
-  </script>
-
-  <!-- Modal Script -->
-  <script>
-    document.getElementById('open-modal-btn').addEventListener('click', () => {
-      document.getElementById('demo-modal').classList.remove('hidden');
-    });
-
-    document.getElementById('close-modal-btn').addEventListener('click', () => {
-      document.getElementById('demo-modal').classList.add('hidden');
-    });
-
-    // Close modal on outside click
-    document.getElementById('demo-modal').addEventListener('click', function(e) {
-      if (e.target.id === 'demo-modal') {
-        this.classList.add('hidden');
-      }
-    });
-  </script>
-</body>
+  });
+</script>
 </html>
